@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ciudades>
+    <ciudad>
+        <nombre>Nueva Dehli</nombre>
+        <pais continente="Asia">India</pais>
+    </ciudad>
+
+    <ciudad>
+        <nombre>Lisboa</nombre>
+        <pais continente="Europa>">Portugal</pais>
+    </ciudad>
+
+    <ciudad>El Cairo</ciudad>
+    <pais continente="Africa">Egipto</pais>
+</ciudades>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hechos_historicos>
+    <hecho descripción="IBM da a conocer el PC">
+        <fecha>
+            <dia>12</dia>
+            <mes>8</mes>
+            <año>1981</año>
+        </fecha>
+    </hecho>
+    <hecho descripción="Se funda Google">
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <año>1998</año>
+        </fecha>
+    </hecho>
+    <hecho descripción="Se funda Facebook">
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <año>2004</año>
+        </fecha>
+    </hecho>
+<hechos_historicos>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lista_marcadores>
+    <nombre>abrir Llave
+        <descripcion>Tutoriales de informatica</descripcion>
+        <url>https://www.abrirllave.com</url>
+    </nombre>
+    <nombre>wikipedia
+        <descripcion>La enciclopedia libre</descripcion>
+        <url>https://www.wikipedia.org</url>
+    </nombre>
+    <nombre>wc3
+        <descripcion>world wide web consorcium</descripcion>
+        <url>https://www.w3.org</url>
+    </nombre>
+</lista_marcadores>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<equipos_de_futbol>
+    <club>Real Madrid
+        <ciudad>Madrid</ciudad>
+        <Entrenador></Entrenador>
+        <jugador posicion="medio">
+            <nombre>Valverde</nombre>
+            <nacionalidad>uruguayo</nacionalidad>
+        </jugador=>
+        <jugador posicion="defensa">
+            <nombre>Militao</nombre>
+            <nacionalidad>brasileño</nacionalidad>
+        </jugador>
+    </club>
+    <club>Barcelona
+        <ciudad>Barcelona</ciudad>
+        <Entrenador></Entrenador>
+        <jugador posicion="medio">
+            <nombre>Pedri</nombre>
+            <nacionalidad>español</nacionalidad>
+        </jugador=>
+        <jugador posicion="delantero">
+            <nombre>Ferran</nombre>
+            <nacionalidad>español</nacionalidad>
+        </jugador>
+    </club>
+</equipos_de_futbol>
