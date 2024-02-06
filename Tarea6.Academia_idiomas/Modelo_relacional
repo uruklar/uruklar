@@ -1,0 +1,4 @@
+
+ALUMNOS (dni_a(PK), codigo_curso(FK), nombre, apellidos, direccion, fecha_nacimiento, sexo)
+PROFESORES (dni_p(PK), nombre, apellidos, direccion, titulo academico, precio_hora)
+CURSO (codigo_curso(PK), numero_alumnos, nombre, dni_a(FK), fecha_inicio, fecha_final, horas_curso)
