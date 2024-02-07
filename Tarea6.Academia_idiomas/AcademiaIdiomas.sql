@@ -1,3 +1,9 @@
+/* Modelo relacional:
+ALUMNOS (dni_a(PK), codigo_curso(FK), nombre, apellidos, direccion, fecha_nacimiento, sexo)
+PROFESORES (dni_p(PK), nombre, apellidos, direccion, titulo academico, precio_hora)
+CURSO (codigo_curso(PK), numero_alumnos, nombre, dni_a(FK), fecha_inicio, fecha_final, horas_curso)
+*/
+
 CREATE TABLE PROFESORES(
     Dni_p VARCHAR(9) PRIMARY KEY,
     Nombre VARCHAR(50) NOT NULL,
