@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
 public class EjMath2 {
@@ -7,7 +6,6 @@ public class EjMath2 {
         Double radio, volumen, numAleatorio;
         int aleatorios;
         Scanner in = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("#.000");
 
         //Ejercicio 1//
         System.out.println("Introduzca el radio del circulo en centimetros para calcular su area.");
