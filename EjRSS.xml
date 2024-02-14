@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+    <channel>
+        <title>Entrevista con expertos</title>
+        <link>https://www.ejemplo.com/episodio1</link>
+        <description>Conversaciones con lideres de la industria sobre temas interesantes</description>
+        <language>es</language>
+        <pubDate>03 Dec 2023</pubDate>
+        <item>
+            <title>Entrevista con expertos - E01</title>
+            <link>https://www.ejemplo.com/episodio1</link>
+            <description>Conversaciones con lideres de la industria sobre temas interesantes</description>
+            <pubDate>03 Dec 2023</pubDate>
+            <duration>00:30:00</duration>
+        </item>
+    </channel>
+</rss>

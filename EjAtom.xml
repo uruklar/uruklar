@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es-es">
+    <title>Desarrollos tecnologicos del año</title>
+    <updated>2023-12-04T09:00:00Z</updated>
+    <link rel="self" type="application/atom*xml" href="https://www.infoalisal.com/feed/atom" />
+    <link rel="alternate" type="text.html" href="https://www.ejemplo.com/noticias"/>
+    <id>https://www.infoalisal.com/feed/atom</id>
+
+    <entry>
+        <title>Desarrollos tecnologicos del año</title>
+        <link rel="alternate" type="text.html" href="https://www.ejemplo.com/noticia1"/>
+        <updated>2023-12-04T09:00:00Z</updated>
+        <id>https://www.infoalisal.com/feed/atom</id>
+        <author>
+            <name>ejemplo</name>
+            <email>ejemplo1@gmail.com</email>
+        </author>
+        <summary>Repaso de los desarrollos tecnologicos mas destacados del año</summary>
+    </entry>
+    </feed>
