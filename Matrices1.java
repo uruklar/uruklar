@@ -16,7 +16,7 @@ public class Matrices1 {
         for(int f=0; f<matriz.length;f++){
 
             for(int c=0; c<matriz[f].length;c++){
-                System.out.print(matriz[f][c]);
+                System.out.print(" " + matriz[f][c] + " ");
                 if(c == matriz[f].length - 1){
                     System.out.print("}");
                     System.out.println("");
