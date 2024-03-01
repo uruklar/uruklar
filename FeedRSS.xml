@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+    <channel>
+        <title>Feed de noticias deportivas</title>
+        <link>http://ejemplo.noticiasdeportivas.com</link>
+        <description>Las noticias deportivas mas relevantes de la actualidad</description>
+        <language>es</language>
+        <pubDate>28 Feb 2024</pubDate>
+
+        <item>
+            <title>El mallorca a la final de la copa del rey</title>
+            <link>https://www.marca.com/futbol/copa-rey/cronica/2024/02/28/65de723622601dbd1e8b459f.html</link>
+            <description>Resumen y valoraciones del partido que clasifica al mallorca para la final de la copa del rey</description>
+            <pubDate>28 Feb 2024</pubDate>
+            <category>Futbol</category>
+        </item>
+
+        <item>
+            <title>Entrevista a Andrea Stella</title>
+            <link>https://as.com/motor/formula_1/red-bull-tenia-tanta-ventaja-que-han-podido-arriesgar-y-funciona-n/</link>
+            <description>Entrevista al jefe de mclaren y su valoracion de los coches de f1 en la nueva temporada</description>
+            <pubDate>28 Feb 2024</pubDate>
+            <category>Formula 1</category>
+        </item>
+    </channel>
+</rss>
