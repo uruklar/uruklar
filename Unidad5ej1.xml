@@ -1,0 +1,25 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<catalogo>
+    <libro>
+        <titulo>El nombre del viento</titulo>
+        <autor>Patrick Rotfuss</autor>
+        <genero>Fantasia</genero>
+        <año_publicacion>2007</año_publicacion>
+        <editorial>Penguin</editorial>
+    </libro>
+    <libro>
+        <titulo>Cronicas marcianas</titulo>
+        <autor>Ray Bradbury</autor>
+        <genero>Ciencia ficcion</genero>
+        <año_publicacion>1950</año_publicacion>
+        <editorial>Minotauro</editorial>
+    </libro>
+    <libro>
+        <titulo>El despertar del Leviatan</titulo>
+        <autor>James S.A. Corey</autor>
+        <genero>Ciencia ficcion</genero>
+        <año_publicacion>2011</año_publicacion>
+        <editorial>Nova</editorial>
+    </libro>
+</catalogo>
