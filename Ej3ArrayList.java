@@ -7,7 +7,7 @@ public class Ej3ArrayList {
         
         boolean ejecutar = true;
         Scanner in = new Scanner(System.in);
-
+        //Menu de opciones mediante un bucle while y un switch//
         while (ejecutar) {
             System.out.println("Seleccione el ejercicio que desea ejecutar");
             System.out.println("1 para el ejercicio numero 1");
@@ -151,7 +151,7 @@ public class Ej3ArrayList {
         boolean ejecutar = true;
         Scanner in = new Scanner(System.in);
         String añadir;
-
+        //Menu de opciones mediante un bucle while y un switch//
         while(ejecutar){
         System.out.println("Para añadir asignaturas a la lista, pulse '1'.");
         System.out.println("Para mostrar la lista de asignaturas , pulse '2'.");
@@ -161,7 +161,7 @@ public class Ej3ArrayList {
         int opcion = in.nextInt();
 
         switch (opcion) {
-            case 1:
+            case 1:            //Introducir asignaturas en el arraylist hasta que quiera el usuario//
                 in.nextLine();
                 System.out.println("Introduzca el nombre de la asignatura:");
                 String asignatura = in.nextLine();
@@ -180,14 +180,14 @@ public class Ej3ArrayList {
                 }while(!añadir.equalsIgnoreCase("no"));
                 System.out.println("");
                 break;
-            case 2:
+            case 2:            //Listar las asignaturas introducidas en el arraylist//
                 System.out.println("La lista de asignaturas es:");
                 for(String lista:asignaturas){
                     System.out.println(lista);
                 }
                 System.out.println("");
                 break;
-            case 3:
+            case 3:            //Buscar asignaturas por nombre dentro del arraylist//
                 if(asignaturas.size()<1){
                     System.out.println("Todavia no hay datos en la tabla.");
                     System.out.println("");
@@ -208,7 +208,7 @@ public class Ej3ArrayList {
                         }
                     }
                 }
-            case 4:
+            case 4:            //Terminar la ejecucion del ejercicio//
                 ejecutar=false;
                 break;
             default:
@@ -217,10 +217,124 @@ public class Ej3ArrayList {
         }
     }
         
-    
-
+    //Ejercicio 4//
     public static void ejercicio4(){
-        
-    }
+        ArrayList<Integer>numeros = new ArrayList<Integer>();
+        boolean ejecutar = true;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Lo primero de todos, para generar un array convencional, debes elegir su tamaño. Por favor escriba el tamaño de array convencional que desea:");
+        int tamaño = in.nextInt();
+        int numeros1[] = new int[tamaño];
+        String añadir;
+        //Menu de opciones mediante un bucle while y un switch//
+        while(ejecutar){
+        System.out.println("");
+        System.out.println("Para añadir valores al arraylist pulse '1'.");
+        System.out.println("Para añadir los valores al array convencional pulse '2'.");
+        System.out.println("Para calcular la suma de los valores del arraylist pulse '3'.");
+        System.out.println("Para calcular la suma de los valores del array convencional pulse '4'.");
+        System.out.println("Para encontrar el numero mas grande en el arraylist pulse '5'.");
+        System.out.println("Para encontrar el numero mas grande en el array convencional pulse '6'.");
+        System.out.println("Para mostrar los valores guardados en el arraylist pulse '7'");
+        System.out.println("Para mostrar los valores guardados en el array convencional pulse '8'");
+        System.out.println("Para finalizar el ejercicio pulse '9'.");
 
+
+        int opcion = in.nextInt();
+
+        switch (opcion) {
+            case 1:            //Introducir valores en el arraylist//
+                System.out.println("");
+                in.nextLine();
+                System.out.println("Introduzca el valor que desea añadir al arraylist:");
+                int numero = in.nextInt();
+                numeros.add(numero);
+
+                do{
+                    in.nextLine();
+                    System.out.println("¿Desea añadir mas valores?");
+                    añadir = in.nextLine();
+                    if(añadir.equalsIgnoreCase("si")){
+                        System.out.println("Introduzca el valor que quiere añadir.");
+                        numero=in.nextInt();
+                        numeros.add(numero);
+                    }else if(!añadir.equalsIgnoreCase("si")&& !añadir.equalsIgnoreCase("no")){
+                        System.out.println("Respuesta incorrecta.");
+                        }
+                }while(!añadir.equalsIgnoreCase("no"));
+                System.out.println("");
+                break;
+            case 2:            //Introducir valores en el array convencional//
+                System.out.println("");
+                System.out.println("Introduzca los valores en su array convencional.");
+                for(int i=0; i<tamaño;i++){
+                    System.out.println("Introduzca el valor del elemento " + (i+1) + " :");
+                    numeros1[i] = in.nextInt();
+                }
+                System.out.println("");
+                break;
+            case 3:            //Mostrar por pantalla la suma de los valores guardados en el arraylist//
+                System.out.println("");
+                int suma=0;
+                for(Integer lista:numeros){
+                    suma+=lista;
+                }
+                System.out.println("La suma de los valores del arraylist es: " + suma + " .");
+                System.out.println("");
+                break;
+            case 4:             //Mostrar por pantalla los la suma de los valores guardados en el array convencional//
+                System.out.println("");
+                int suma1=0;
+                for(int i=0;i<tamaño;i++){
+                    suma1+=numeros1[i];
+                }
+                System.out.println("La suma de los valores del array convencional es: " + suma1 + " .");
+                System.out.println("");
+                break;
+            case 5:             //Mostrar por pantalla el valor mas alto guardado en el arraylist//
+                System.out.println("");
+                int mayor=Integer.MIN_VALUE;
+                for (int lista:numeros){
+                    if(lista>mayor){
+                        mayor = lista;
+                    }
+                }
+                System.out.println("El valor mas alto en el arraylist es: "+ mayor + " .");
+                System.out.println("");
+                break;
+            case 6:             //Mostrar por pantalla el valor mas alto guardado en el array convencional//
+                System.out.println("");
+                int mayor1=Integer.MIN_VALUE;
+                for(int i=0;i<tamaño;i++){
+                    if(numeros1[i]>mayor1){
+                        mayor1=numeros1[i];
+                    }
+                }
+                System.out.println("El valor mas alto en el array convencional es "+ mayor1+ " .");
+                System.out.println("");
+                break;
+            case 7:             //Mostrar por pantalla los valores guardados en el arraylist//
+                System.out.println("");
+                System.out.println("Los valores del arraylist son: ");
+                System.out.print("| ");
+                for(Integer lista:numeros){
+                    System.out.print(lista + " | ");
+                }
+                System.out.println("");
+                break;
+            case 8:             //Mostrar por pantalla los valores guardados en el array convencional//
+                System.out.println("Los valores del array convencional son: ");
+                System.out.print("| ");
+                for(int i=0; i<tamaño;i++){
+                    System.out.print(numeros1[i]+ " | ");
+                }
+                System.out.println("");
+                break;
+            case 9:             //Finalizar el ejercicio//
+                ejecutar=false;
+                break;
+            }
+        }
+
+    }
 }
