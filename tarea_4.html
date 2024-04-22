@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4</title>
+</head>
+<body>
+    <h1>Encabezado de ejemplo 1.</h1>
+    <p>Parrafo de ejemplo 1.</p>
+    <h2>Encabezado de ejemplo 2.</h2>
+    <ul>
+        <li>Elemento de ejemplo 1.</li>
+        <li>Elemento de ejemplo 2.</li>
+        <li>Elemento de ejemplo 3.</li>
+    </ul>
+    <p id="cambio">Haz click en el boton para cambiar este parrafo.</p>
+    <button id="boton"> Cambiar parrafo </button>
+
+    <script>
+        var parrafo = document.getElementById("cambio");
+        var boton = document.getElementById("boton");
+        boton.addEventListener("click", function(){
+            parrafo.textContent = "¡Este parrafo ha sido cambiado!";
+        });
+    </script>
+    
+</body>
+</html>
